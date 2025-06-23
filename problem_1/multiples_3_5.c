@@ -36,7 +36,7 @@ void get_sum_of_three_and_five(int *n){
 
 void main(){
     // gets the cumulative sum up to 1000, included.
-    // The answer to Euler's Project problem #1
+    // The answer to Project Euler's problem #1
     // will be the last output of this loop.
     for(int i = 10; i <= 1000; i++){
         get_sum_of_three_and_five(&i);

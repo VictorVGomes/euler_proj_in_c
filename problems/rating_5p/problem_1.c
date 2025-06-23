@@ -18,7 +18,7 @@ int get_sum(int value, int *n){
 }
 
 
-void get_sum_of_three_and_five(int *n){
+void cumsum(int *n){
     // the function will be purposefully verbose
     // i will count appearances of multiples of 3
     // n-1 is used to avoid counting the n-th term
@@ -42,6 +42,6 @@ void main(){
     // The answer to Project Euler's problem #1
     // will be the last output of this loop.
     for(int i = 10; i <= 1000; i++){
-        get_sum_of_three_and_five(&i);
+        cumsum(&i);
     };
 }

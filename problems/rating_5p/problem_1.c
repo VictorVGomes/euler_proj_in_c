@@ -11,7 +11,7 @@
 // the use of loops and such.
 
 
-int sum_multiples_of(int value, int *n){
+int sum_multiples(int value, int *n){
     // This function sums all integer values up to
     // a value n in a function of the form
     // f(x) = value * x, where `value` is a constant
@@ -35,9 +35,9 @@ void get_combined_multiples_summation(int *n){
     //  (3*5) (these will be subtracted from the final answer)
     int k = ((*n) - 1) / 15;
     // get sums of 3, 5, 15
-    int sum3 =  sum_multiples_of(3, &i);
-    int sum5 = sum_multiples_of(5, &j);
-    int sum15 = sum_multiples_of(15, &k);
+    int sum3 =  sum_multiples(3, &i);
+    int sum5 = sum_multiples(5, &j);
+    int sum15 = sum_multiples(15, &k);
     int result = sum3 + sum5 - sum15;
     printf("The sum of multiples of 3 and 5 up to %d is %d\n", (*n), result);
 }

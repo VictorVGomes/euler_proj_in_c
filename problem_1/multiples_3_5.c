@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 // Although there may be no benefit
 // (actually, it might be prejudicial)
 // to use pointers in these functions
@@ -9,11 +10,13 @@
 // This solution should be O(1), since it avoids
 // the use of loops and such.
 
+
 int get_sum(int value, int *n){
     int a_n = value * (*n);
     int out = (value + a_n) * (*n) / 2;
     return out;
 }
+
 
 void get_sum_of_three_and_five(int *n){
     // the function will be purposefully verbose

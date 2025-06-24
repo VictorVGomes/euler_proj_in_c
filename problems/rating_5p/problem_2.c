@@ -4,11 +4,13 @@
 int fib(int n){
     // implements Fibonacci seq. using
     // recursion and some tricks
-    // w/o memoization. should be O(mlogn)
+    // w/o memoization. Don't know the complexity yet.
     // to compute a single fib number.
     // "k" will be the middle of the interval,
     // ensuring it is halving the remaining
-    // space.
+    // space, though there is clearly a tradeoff.
+    // I could've stuck with the usual solution, but
+    // chose to try out a different implementation.
     int k = n / 2;
     if(n < 2){ // recursion stopping criteria
         return 1;

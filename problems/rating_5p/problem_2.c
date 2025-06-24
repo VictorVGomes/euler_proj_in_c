@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 
 int fib(int n){
     // implements Fibonacci seq. using
     // recursion and some tricks
-    // wo/ memoization. should be O(nlogn)
+    // w/o memoization. should be O(mlogn)
     // to compute a single fib number.
     // "k" will be the middle of the interval,
     // ensuring it is halving the remaining
